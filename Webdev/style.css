@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Brown';
+    src: url('./font/Brown-Font/Brown\ Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url('./font/Brown-Font/BrownLight\ Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url('./font/Brown-Font/BrownMedium\ Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    font-family: "Brown", sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: flex-start;
+    width: 350px;
+    margin: 120px;
+;
+}
+
+.logo {
+    width: 80px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.header-text > h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.header-text > p {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: #737373;
+}
+
+fieldset {
+    display: flex;
+    width: 500px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    border: none;
+    border-radius: 8px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-self: stretch;
+    gap: 24px;
+    /* margin: 0 auto;
+    border: 1px, solid; */
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    /* margin-top: 20px; */
+}
+
+input {
+    height: 40px;
+    width: 200px;
+    padding: 8px
+}
+
+select {
+    padding-left: 8px;
+    height: 40px;
+    width: 200px
+}
+
+.long {
+    width: 420px; 
+}
+
+button {
+    display: flex;
+    width: 420px; 
+    justify-content: center;
+    padding: 10px;
+    font-family: "Brown", sans-serif;
+    font-size: 14px;
+    background-color: #2EC4B6;
+    border: none;
+}
+
+.button-terms {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    font-size: 14px;
+}

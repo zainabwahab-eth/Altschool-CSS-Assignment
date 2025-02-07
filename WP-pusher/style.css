@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: #1D2C3C;
+    background-color: #F5F8FA;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-bottom: #646E7A 1px solid;
+}
+
+.logo>img {
+    width: 150px;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    font-size: 14px;
+}
+
+.sec-button {
+    padding: 12px;
+    background-color: inherit;
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: 700;
+    border-color: #646E7A;
+}
+
+.navlinks > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navlinks > button:hover, a:hover {
+    cursor: pointer;
+}
+
+.main-content {
+    display: grid;
+    width: 700px;
+    height: 600px;
+    border-radius: 6px;
+    box-shadow: 0px 15px 35px 0px rgba(43, 64, 78, 0.10), 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    grid-template-columns: 400px 300px;
+}
+
+.checkout-form {
+    padding: 40px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.checkout-form > h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.long-seperator {
+    height: 1px;
+    background-color: #F5F7FA;
+    margin: 12px 0;
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 20px 0;
+}
+.form-header > h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+.circle-number {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border: #548BC5 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-number > p {
+    color: #548BC5;
+    font-size: 14px;
+    font-weight: 700;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+    border: none;
+    margin: 12px 0;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+input {
+    height: 30px;
+    padding: 0 8px;
+    width: 100%;
+    background-color: #EDEFF2;
+    border: none;
+    border-radius: 4px;
+}
+
+.short-form {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+}
+
+.pri-button{
+    width: 100%;
+    padding: 12px 0;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #038E7D;
+    border-radius: 6px;
+    border: none;
+}
+
+.material-symbols-outlined {
+    /* vertical-align: middle; */
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 16
+}
+
+
+.help > p, span {
+    vertical-align: middle;
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+.help {
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+.checkout-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 100%;
+    justify-content: flex-start;
+    background-color: #1179BF;
+    color: #fff;
+    padding: 48px;
+}
+
+.freelance {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.freelance > h4 {
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.price > .dollar {
+    font-size: 20px;
+    vertical-align: top;
+    line-height: 2;
+    font-weight: 400;
+}
+
+.price > .number {
+    font-size: 69px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.price > .year {
+    font-size: 20px;
+    vertical-align: bottom;
+    line-height: 2;
+    font-weight: 400;
+}
+
+.freelance > p {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.uses {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.use > p {
+    font-size: 14px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 16
+}
+
+.agency {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.agency > p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.short-seperator {
+    height: 1px;
+    background-color: #Fff;
+    margin: 12px 0;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.testimonial > p {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.person-img {
+   width: 32px;
+    height: 32px;
+    background-color: #646E7A;
+    border-radius: 40px;
+}
+
+.person > p {
+    font-size: 14px;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+}
