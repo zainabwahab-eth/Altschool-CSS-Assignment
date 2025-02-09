@@ -31,7 +31,7 @@ body {
 
 .sell-text {
     position: absolute;
-    top: 12px;
+    top: 4px;
     left: -8px;
     width: 150px;
     font-size: 12px;
@@ -68,4 +68,5 @@ body {
 .lower > p {
     font-size: 14px;
     font-weight: 400;
+    line-height: 20px;
 }

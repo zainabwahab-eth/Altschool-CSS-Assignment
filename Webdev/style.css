@@ -40,9 +40,8 @@ body {
     flex-direction: column;
     gap: 24px;
     justify-content: flex-start;
-    width: 350px;
     margin: 120px;
-;
+    padding: 0 80px;
 }
 
 .logo {
@@ -56,38 +55,31 @@ body {
     justify-content: flex-start;
 }
 
-.header-text > h1 {
+.header-text>h1 {
     font-size: 36px;
     font-weight: 700;
 }
 
-.header-text > p {
+.header-text>p {
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
     color: #737373;
 }
 
-fieldset {
-    display: flex;
+form {
     width: 500px;
     padding: 40px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 20px;
     box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
-    border: none;
     border-radius: 8px;
 }
 
-.wrap {
-    display: flex;
-    justify-content: center;
-    align-self: stretch;
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 24px;
-    /* margin: 0 auto;
-    border: 1px, solid; */
+    border: none;
 }
 
 label {
@@ -96,41 +88,97 @@ label {
     gap: 8px;
     font-size: 14px;
     font-weight: 400;
-    /* margin-top: 20px; */
 }
 
 input {
     height: 40px;
-    width: 200px;
-    padding: 8px
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
 }
 
 select {
-    padding-left: 8px;
+    padding: 8px;
     height: 40px;
-    width: 200px
+    width: 100%;
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
 }
 
 .long {
-    width: 420px; 
+    grid-column: span 2;
 }
 
 button {
     display: flex;
-    width: 420px; 
+    width: 100%;
     justify-content: center;
     padding: 10px;
     font-family: "Brown", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
     background-color: #2EC4B6;
+    color: #ffffff;
     border: none;
 }
 
 .button-terms {
     margin-top: 20px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 12px;
     text-align: center;
     font-size: 14px;
+}
+
+/* Resposiveness */
+@media screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        margin: 0 auto;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .header-text>h1 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .header-text>p {
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        color: #737373;
+    }
+
+    .header {
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .form-section {
+        display: flex;
+        width: 100%;
+    }
+
+    form {
+        background-color: #ffffff;
+        width: 100%;
+        padding: 20px;
+    }
+
+    label {
+        grid-column: span 2;
+    }
 }
